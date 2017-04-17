@@ -19,6 +19,7 @@ type mLayer struct {
 // instances, and a final routing function.
 type mStack struct {
 	lock   sync.Mutex
+	pLock  sync.Mutex
 	stack  []mLayer
 	pool   *cPool
 	router internalRouter
@@ -100,7 +101,8 @@ func (m *mStack) alloc() *cStack {
 	if cs == nil {
 		cs = m.newStack()
 	}
-
+	m.pLock.Lock()
+	defer m.pLock.Unlock()
 	cs.pool = p
 	return cs
 }
@@ -111,6 +113,8 @@ func (m *mStack) release(cs *cStack) {
 		return
 	}
 	cs.pool.release(cs)
+	m.pLock.Lock()
+	defer m.pLock.Unlock()
 	cs.pool = nil
 }
 
