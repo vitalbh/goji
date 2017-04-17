@@ -1,7 +1,7 @@
 Goji
 ====
 
-[![GoDoc](https://godoc.org/github.com/zenazn/goji/web?status.svg)](https://godoc.org/github.com/zenazn/goji/web) [![Build Status](https://travis-ci.org/zenazn/goji.svg)](https://travis-ci.org/zenazn/goji)
+[![GoDoc](https://godoc.org/github.com/vitalbh/goji/web?status.svg)](https://godoc.org/github.com/vitalbh/goji/web) [![Build Status](https://travis-ci.org/zenazn/goji.svg)](https://travis-ci.org/zenazn/goji)
 
 Goji is a minimalistic web framework that values composability and simplicity.
 
@@ -15,8 +15,8 @@ import (
         "fmt"
         "net/http"
 
-        "github.com/zenazn/goji"
-        "github.com/zenazn/goji/web"
+        "github.com/vitalbh/goji"
+        "github.com/vitalbh/goji/web"
 )
 
 func hello(c web.C, w http.ResponseWriter, r *http.Request) {
@@ -32,7 +32,7 @@ func main() {
 Goji also includes a [sample application][sample] in the `example` folder which
 was artificially constructed to show off all of Goji's features. Check it out!
 
-[sample]: https://github.com/zenazn/goji/tree/master/example
+[sample]: https://github.com/vitalbh/goji/tree/master/example
 
 
 Features
@@ -49,9 +49,9 @@ Features
 * High in antioxidants
 
 [einhorn]: https://github.com/stripe/einhorn
-[bind]: http://godoc.org/github.com/zenazn/goji/bind
-[graceful]: http://godoc.org/github.com/zenazn/goji/graceful
-[pattern]: https://godoc.org/github.com/zenazn/goji/web#Pattern
+[bind]: http://godoc.org/github.com/vitalbh/goji/bind
+[graceful]: http://godoc.org/github.com/vitalbh/goji/graceful
+[pattern]: https://godoc.org/github.com/vitalbh/goji/web#Pattern
 
 
 Is it any good?
@@ -140,7 +140,7 @@ integrating more tightly with Goji's `web.C` or by providing a custom pattern
 type. An informal list of such libraries is maintained [on the wiki][third];
 feel free to add to it as you see fit.
 
-[third]: https://github.com/zenazn/goji/wiki/Third-Party-Libraries
+[third]: https://github.com/vitalbh/goji/wiki/Third-Party-Libraries
 
 
 Contributing

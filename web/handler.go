@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-const unknownHandler = `Unknown handler type %T. See http://godoc.org/github.com/zenazn/goji/web#HandlerType for a list of acceptable types.`
+const unknownHandler = `Unknown handler type %T. See http://godoc.org/github.com/vitalbh/goji/web#HandlerType for a list of acceptable types.`
 
 type netHTTPHandlerWrap struct{ http.Handler }
 type netHTTPHandlerFuncWrap struct {

@@ -7,7 +7,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/zenazn/goji/graceful/listener"
+	"github.com/vitalbh/goji/graceful/listener"
 )
 
 // This is a slightly hacky shim to disable keepalives when shutting a server

@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/zenazn/goji/graceful/listener"
+	"github.com/vitalbh/goji/graceful/listener"
 )
 
 // About 200 years, also known as "forever"

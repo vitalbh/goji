@@ -4,7 +4,7 @@ net.Listener.
 
 This package provides low-level primitives, not a high-level API. If you're
 looking for a package that provides graceful shutdown for HTTP servers, I
-recommend this package's parent package, github.com/zenazn/goji/graceful.
+recommend this package's parent package, github.com/vitalbh/goji/graceful.
 */
 package listener
 

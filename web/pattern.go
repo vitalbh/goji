@@ -31,7 +31,7 @@ type Pattern interface {
 	Run(r *http.Request, c *C)
 }
 
-const unknownPattern = `Unknown pattern type %T. See http://godoc.org/github.com/zenazn/goji/web#PatternType for a list of acceptable types.`
+const unknownPattern = `Unknown pattern type %T. See http://godoc.org/github.com/vitalbh/goji/web#PatternType for a list of acceptable types.`
 
 /*
 ParsePattern is used internally by Goji to parse route patterns. It is exposed
